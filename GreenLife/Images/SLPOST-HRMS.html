@@ -1,0 +1,724 @@
+
+<!-- saved from url=(0036)https://hrms.slpost.lk//emp_view.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .thead-dark th {
+                color: #fff;
+                background-color: #373a3c;
+            }
+           
+  </style>
+
+ 
+
+
+</head><body><nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="https://hrms.slpost.lk//home2.php"><span class="glyphicon glyphicon-home"></span></a>
+    </div>
+    <ul class="nav navbar-nav">
+   
+     
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="https://hrms.slpost.lk//emp_view.php#">Add
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        
+             
+          <li><a href="https://hrms.slpost.lk//emp_add.php">New Employee</a></li>
+              
+           
+
+
+
+
+         
+        
+   
+
+        </ul>
+      </li>
+ 
+
+
+
+
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="https://hrms.slpost.lk//emp_view.php#">View
+        <span class="caret"></span></a>
+       
+    
+         <ul class="dropdown-menu">
+                            
+    
+          <li><a href="https://hrms.slpost.lk//view-emp2.php">All Employees</a></li>  		   <li><a href="https://hrms.slpost.lk//view-emp_recent.php">Recent Entries...</a></li>            					
+                    
+                    <li><a href="https://hrms.slpost.lk//view-cadre-list.php">Cadre Details</a></li>                       <li><a href="https://hrms.slpost.lk//nic-converter.php">NIC Converter</a></li> 
+                       <li><a href="https://hrms.slpost.lk//slpostdir.php">SLPOST Directory</a></li> 
+
+     
+
+    
+           
+     
+     </ul>
+      
+      </li>
+      
+     
+
+
+      
+	  
+	      
+       
+        
+
+ 
+      
+                <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="https://hrms.slpost.lk//emp_view.php#">Contact Us         <span class="caret"></span></a>
+       
+    
+         <ul class="dropdown-menu">
+                            
+    
+          <li><a href="https://hrms.slpost.lk//sendmsg.php">Send Message to ITRC-KG</a></li>                       <li><a href="https://hrms.slpost.lk//view-inbox.php">View Inbox <span class="badge badge-secondary">0</span></a></li> 
+                <li><a href="https://hrms.slpost.lk//itus.php">About Us</a></li>
+           
+     
+     </ul>
+      
+      </li>
+           
+           </ul>
+      
+    
+
+    
+
+ 
+
+    <ul class="nav navbar-nav navbar-right"><a href="https://hrms.slpost.lk//itus.php">.</a>
+        <li><a href="https://hrms.slpost.lk//emp_view.php#"><span class="glyphicon glyphicon-time"></span> 2025-06-22 Sunday</a></li>
+        <li><a href="https://hrms.slpost.lk//emp_view.php#"></a></li>
+
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="https://hrms.slpost.lk//emp_view.php#"><span class="glyphicon glyphicon-user"></span> Ridigama PO <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+                                <li><a href="https://hrms.slpost.lk//login-success-emp.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>           <li><a href="https://hrms.slpost.lk//slpostdirview.php?po=Ridigama%20PO"><span class="glyphicon glyphicon-th-large"></span> Office Profile</a></li>          <li><a href="https://hrms.slpost.lk//passwordc.php"><span class="glyphicon glyphicon-wrench"></span> Change Password</a></li>           
+          <li><a href="https://hrms.slpost.lk//logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          </ul>
+            </li><li>
+        </li></ul>
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SLPOST-HRMS</title>
+ <link rel="stylesheet" href="./SLPOST-HRMS_files/bootstrap.min.css">
+  <script src="./SLPOST-HRMS_files/jquery.min.js.download"></script>
+  <script src="./SLPOST-HRMS_files/bootstrap.min.js.download"></script>
+<link rel="stylesheet" href="./SLPOST-HRMS_files/font-awesome.min.css">
+
+<style>
+        a.hidelink {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+<script>
+        $(function(){
+            $("a.hidelink").each(function (index, element){
+                var href = $(this).attr("href");
+                $(this).attr("hiddenhref", href);
+                $(this).removeAttr("href");
+            });
+            $("a.hidelink").click(function(){
+                url = $(this).attr("hiddenhref");
+                window.open(url, '_blank');
+            })
+        });
+    </script>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+  <script>
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+  <script>
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<div class="list-group">
+
+  <button type="button" class="list-group-item list-group-item-action active">
+    <h4>EMPLOYEE PROFILE </h4>
+     <form action="https://hrms.slpost.lk//emp_edit.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;">Edit&nbsp; <span class="glyphicon glyphicon-edit" style="color: Black; float: right;" <="" span=""></span></button>
+
+ 
+    <div class="container">
+    <div class="text-center">
+  
+  <br>
+ 
+
+    
+
+<div class="col-sm-3">
+<div class="panel panel-default">
+ 
+<div class="panel-body">
+
+
+
+
+
+    <div class="card text-white bg-primary mb-2" style="max-width: 18rem;">
+
+  <div class="card-header"><h4>706452869V</h4></div>
+  <div class="card-body">
+   
+    <p class="card-text"><img src="./SLPOST-HRMS_files/f.jpg" height="150" width="150"></p>
+     <h5 class="card-title">P.D.V.N.D. Peter</h5>
+ 
+ 
+ 
+
+</div>    
+</div>
+  <span class="badge badge-light">1970-05-24</span><span class="badge badge-light">Sunday</span>
+ <br> <br>
+  <span class="badge badge-light">55 Years</span>
+<br><br>
+<button type="button" class="btn btn-primary">
+  <span class="badge badge-danger">Working</span><br><br>
+
+
+ <span class="badge badge-danger">Ridigama PO</span><br><br>
+ <span class="badge badge-danger"></span>
+</button>
+
+
+
+</div><span class="badge badge-primary">PM</span><br><br><br></div>
+
+</div>
+    <div class="col-sm-9"><br>
+<button type="button" class="btn btn-primary">
+Personal File No. <span class="badge badge-light"></span>
+ </button>
+
+<!--<button type="button" class="btn btn-primary">
+ Pay Slip ID  <span class="badge badge-light">508</span>
+ </button>
+<button type="button" class="btn btn-primary">
+ Seniority No.  <span class="badge badge-light">0</span>
+ </button>-->
+
+
+
+
+
+<br><br>
+
+
+  <div class="panel panel-default">
+  <div class="panel-heading"><h4>Mrs.&nbsp;PUSHPA DEWAGE VENISHIYA NILMINI DE PETER</h4>
+    <h4></h4><br>
+
+  <span class="badge badge-primary">Postal Service Officer (I)</span>
+  <span class="badge badge-primary">Grade I</span>
+    <span class="badge badge-primary">PSO 3</span>
+      <span class="badge badge-primary">Departmentalized</span>
+      <span class="badge badge-primary">Secondary</span>
+
+  </div>
+  </div>
+  </div>
+
+
+
+  
+   <div class="panel panel-default">
+  <div class="panel-heading"><h5>KOSGAHAPITIYA WATTA, MALANDENIYA, KAHAPATHWALA.&nbsp;<span class="badge badge-light">Kahapathwala SPO</span></h5>
+  <br><br>
+
+  <span class="badge badge-light">0712608518</span>
+
+  <span class="badge badge-light">0372298725</span>
+
+ 
+  <span class="badge badge-light">venishiyanilmini0524@gmail.com</span>&nbsp;&nbsp;
+  <a class="hidelink" target="_blank" rel="noreferrer noopener" hiddenhref="https://wa.me/940712608518"> <i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+  <span class="badge badge-light">0712608518</span><br><br>
+  </div>
+  <br>
+  First Appointment Date <span class="badge badge-light">2003-03-24</span>
+
+@ Age <span class="badge badge-light">32 Years </span>
+
+ Now Service <span class="badge badge-light">22 Years</span>
+
+<br><br>
+
+ Pension Date <span class="badge badge-light">2030-05-24</span>
+
+
+ to more...<span class="badge badge-light">04 Years</span>
+  Total Service <span class="badge badge-light">27 Years</span><br><br>
+
+<br>
+<div class="panel-heading">&nbsp;&nbsp;&nbsp;Religion : <span class="badge badge-light">Buddhism</span>&nbsp;&nbsp;&nbsp;&nbsp;     W&amp;OP No. : <span class="badge badge-light">5897442</span>&nbsp;&nbsp;&nbsp;&nbsp;     Agrahara No. : <span class="badge badge-light"></span><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;        Date of Permanent : <span class="badge badge-light">0000-00-00</span>&nbsp;&nbsp;&nbsp;&nbsp;   Appoinment Status : <span class="badge badge-light">Permanent</span> from 2003-03-24&nbsp;&nbsp;&nbsp;&nbsp;   <span class="label label-danger"></span>
+
+
+ 
+ <br><br></div>
+  </div>
+
+<button type="submit" style="color: red;float: right; "> </button>
+
+ 
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="col-sm-15">
+
+
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    <b>Working History : </b> <form action="https://hrms.slpost.lk//emp_working.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+    
+       <button type="button" class="list-group-item list-group-item-action" disabled=""><b>[2] Polpitigama PO</b> from <b>2018-00-00</b> to <b>2021-05-18 </b> as <b>PM <b>[] | Other Transfer | Pay Slip ID :508 | W&amp;OP Deduction Status :Active </b>  
+	   
+	      <form action="https://hrms.slpost.lk//emp_working_edit.php" method="post">
+  
+  <input type="hidden" id="id" name="id" value="367">
+  </form></b></button><b><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; " <="" span=""></span></button>
+ 	   
+	   
+	 
+	   
+          
+       <button type="button" class="list-group-item list-group-item-action" disabled=""><b>[1] Account Office - Kurunegala</b> from <b>2010-00-00</b> to <b>2014-00-00 </b> as <b>Subject Clerk <b>[] | Annual Transfer | Pay Slip ID :508 | W&amp;OP Deduction Status :Active </b>  
+	   
+	      <form action="https://hrms.slpost.lk//emp_working_edit.php" method="post">
+  
+  <input type="hidden" id="id" name="id" value="366">
+  </form></b></button><b><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; " <="" span=""></span></button>
+ 	   
+	   
+	 
+	   
+        
+</b></b></div><b><b>
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Status History : <form action="https://hrms.slpost.lk//emp-status.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+         <button type="button" class="list-group-item list-group-item-action" disabled=""><b>Working</b> from <b>2021-05-19</b> to <b>Present</b> <b>[Rajgama PO]</b>
+       
+        <form action="https://hrms.slpost.lk//emp-status_edit.php" method="post">
+  
+  <input type="hidden" id="id" name="id" value="157">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; " <="" span=""></span></button>
+ 
+        
+</div>
+ 
+
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Leave Details :    </button>
+<br><br>&nbsp;&nbsp;[2025]&nbsp;&nbsp; Total Anual Leave [0] &nbsp;&nbsp; Total Casual Leave [0]&nbsp;&nbsp;Total Sick Leave [0]
+<button onclick="myFunction()"><span class="glyphicon glyphicon-eye-open" style="color: Black; " <="" span=""></span></button>
+<div id="myDIV" style="display:none;">
+  </div>
+       
+
+        <br><br>&nbsp;&nbsp;[2024]&nbsp;&nbsp; Total Anual Leave [0] &nbsp;&nbsp; Total Casual Leave [0]&nbsp;&nbsp;Total Sick Leave [0]
+<button onclick="myFunction2()"><span class="glyphicon glyphicon-eye-open" style="color: Black; " <="" span=""></span></button>
+<div id="myDIV2" style="display:none;">
+  
+</div>
+
+
+<br><br>&nbsp;&nbsp;[2023]&nbsp;&nbsp; Total Anual Leave [0] &nbsp;&nbsp; Total Casual Leave [0]&nbsp;&nbsp;Total Sick Leave [0]
+<button onclick="myFunction3()"><span class="glyphicon glyphicon-eye-open" style="color: Black; " <="" span=""></span></button>
+<div id="myDIV3" style="display:none;">
+  
+</div>
+
+ <br> <br>
+ </div>
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Promotion Details : <form action="https://hrms.slpost.lk//emp_promotions.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+  
+</div>
+
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    EB Exams: <form action="https://hrms.slpost.lk//emp_ebexams.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+  
+</div>
+
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Increment Details : Increment Date : <b>03-24</b> &nbsp;&nbsp; [Status : <b>OK]</b> &nbsp;&nbsp;    </button>
+<br><br>
+  
+
+
+         
+
+
+</div>
+
+<br>
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Civil Status : Married   
+       <form action="https://hrms.slpost.lk//emp_spousedtl.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; float: right;"></span></button>
+  
+
+</div>
+       <button type="button" class="list-group-item list-group-item-action" disabled="">Name of Spouse :    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Contact No : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Designation :  @  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Number of Child :        
+              
+       </button>
+<br><br>
+ 
+        
+     
+       
+
+  
+
+ 
+
+
+<br><br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    <b>Internal Trainings :</b> <form action="https://hrms.slpost.lk//emp_training.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+  
+</div>
+ 
+
+<br>
+
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Highest Educational Qualification : Degree    <form action="https://hrms.slpost.lk//emp_degree.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: black; float: right;">Degree <span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+ 
+ <form action="https://hrms.slpost.lk//emp_edu.php" method="post">
+
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  <button type="submit" style="color: black; float: right;">GCE O/L &amp; A/L <span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+</form>  
+<br><br>
+
+  
+   
+<br>
+
+
+
+   
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Other Qualifications : <form action="https://hrms.slpost.lk//emp_qualifi.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+
+</div>
+
+
+
+<br>
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Official Language Proficiency : Completed    <form action="https://hrms.slpost.lk//emp_lang_edit.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; float: right;" <="" span=""></span></button>
+  
+
+       <button type="button" class="list-group-item list-group-item-action" disabled="">Sinhala : [Excellent] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Tamil : [Week] &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; English : [Normal]</button>
+       
+
+  
+</div>
+ 
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Achievements / Awards : <form action="https://hrms.slpost.lk//emp_awards.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-plus" style="color: Black; " <="" span=""></span></button>
+  
+<br><br>
+  
+</div>
+
+<br>
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Special Skills :
+  </button>
+
+       <button type="button" class="list-group-item list-group-item-action" disabled=""></button>
+       
+
+  
+</div>
+<br>
+
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Document List : <br>
+  </button>
+ 
+
+    <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+First Appointment Letter <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Birth Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ True Copy of National Identity Card <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Oath and Pledge <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Medical Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Statement of Assets <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Original Ordinary Level Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Original Advanced Level Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Original Degree Certificate (if any) <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Computer Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ History Sheet <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Grama Niladhari Certificate <br>
+
+   <input type="checkbox" onclick="this.checked=!this.checked;" value=" "> 
+ Marriage Certificate (if any) <br>
+
+ 
+
+
+
+
+</div> 
+
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Inquiries : [0]   </button>
+<br><br>
+  
+</div>
+
+
+<br>
+
+ <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Special Notes : <form action="https://hrms.slpost.lk//emp_notes_edit.php" method="post">
+  
+  <input type="hidden" id="nic" name="nic" value="706452869V">
+  </form></button><button type="submit" style="color: red; float: right;"><span class="glyphicon glyphicon-edit" style="color: Black; float: right;" <="" span=""></span></button>
+  
+
+       <button type="button" class="list-group-item list-group-item-action" disabled=""></button>
+       
+
+  
+</div>
+    
+
+<br>
+
+<div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active">
+    Transfer Applications : 
+	   
+<br><br>
+  
+</button></div>
+
+
+
+
+
+<div>
+
+
+
+
+
+</div>
+
+
+
+
+  
+</div>
+ 
+
+<br><br>
+
+</b></b></div><b><b>
+
+
+ </b></b></div><b><b>
+
+
+                  
+
+
+
+
+<br>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+ 
+    
+      <div align="center" ;="" style=" color: white;">© Copyright-Department of Posts. All Rights Reserved.<br>Developed by ITRC-Kurunegala</div>
+      
+       
+      <p align="right" ;=""><a style=" color: white;" href="https://hrms.slpost.lk//emp_view.php#"><span class="glyphicon glyphicon-chevron-up"></span></a></p><a style=" color: white;" href="https://hrms.slpost.lk//emp_view.php#">
+    
+  </a></div><a style=" color: white;" href="https://hrms.slpost.lk//emp_view.php#">
+</a></nav><a style=" color: white;" href="https://hrms.slpost.lk//emp_view.php#"> 
+
+
+
+
+
+</a></b></b></body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenLife Wellness Center</title>
+  <script src="registerValidation.js" defer></script>
+  <link rel="stylesheet" href="getStartedStyle.css" />
+  <link rel="icon" type="image/x-icon" href="greenlifeFavIcon.jpg">
+  <style>
+    .input1{
+      width: 96%;
+      padding: 5px;
+    border: solid 2px #ccc;
+    border-radius: 7px;
+    }
+    .input1:hover{
+      border: solid 2px #064833;
+    }
+
+    #submit{
+      width: 100%;
+    background-color: #064833;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0 15px;
+    border: none;
+    
+    cursor: pointer;
+    border-radius: 7px;
+    }
+    #submit:hover{
+      background-color:rgb(73, 193, 77);
+      font-weight:bold;
+    }
+
+    .divRegForm p a{
+    text-decoration: none;
+    }
+     .divRegForm p a:hover{
+      text-decoration: underline;
+     }
+
+     .generDivBox{
+      display: flex;
+     }
+     .gender{
+      display: flex;
+      cursor: pointer;
+     }
+     
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="headerContainer">
+      <div class="logo">
+        <a href="getStarted.html"><img src="light_logo_remvovedBG.png" alt="GreenLife_Logo" width="100" height="100" /></a>
+      </div>
+
+
+      <!--<div class="headerButtons">
+  <a href="login.html"><button type="button" class="headerLoginButton">Login</button></a>
+  <a href="getStarted.html"><button type="button" class="headerSignupButton">Back</button></a>
+</div>
+    </div>-->
+  </header>
+
+
+<div class="container">
+  <div id="divText" style=" width: 700px;">
+    <!--<p id="p1">Login to Green Life wellness center</p>-->
+    <h1>Register with <span style="color: #08543c;">Green Life</span> wellness center</h1>
+    <p id="p2">Renowned health and lifestyle organization based in Colombo,
+         dedicated to holistic wellness. The center offers services such as yoga, meditation,
+          nutritional guidance, and therapy, blending traditional healing with modern techniques.
+           With experienced professionals and a supportive environment, GreenLife helps individuals
+            achieve physical, mental, and emotional well-being.</p>
+            
+  </div>
+  
+  <div class="divRegForm">
+        <form action="register.php" method="post" onsubmit=" return validation()">
+          <span class="close" onclick="window.location.href='getStarted.html'">&times;</span>
+            <h2>Registration form</h2>
+
+            <label for="fname">first name</label>
+            <input class="input1" type="text" id="fname" name="fname">
+
+            <label for="lname">Last name</label>
+            <input  class="input1" type="text" id="lname" name="lname">
+
+            <label for="username">Username</label>
+            <input  class="input1" type="text" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input  class="input1" type="password" id="password" name="password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input  class="input1" type="password" id="confirmPassword" name="cpassword">
+
+
+            
+            <label>Gender:</label>
+
+            <div class="generDivBox">
+              <label  class="gender"><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <label  class="gender"><input type="radio" id="female" name="gender" value="female"> Female</label>
+            <label  class="gender"><input type="radio" id="noGender" name="gender" value="noGender"> Prefer not say</label>
+
+            </div>
+            
+
+            
+            
+
+                
+
+            <input type="submit" id="submit" value="submit">
+            <p>Already have an account? <a href="login.php">Login</a> </p>
+
+            
+        </form>
+    
+  </div>
+  
+</div>
+
+
+</body>
+</html>

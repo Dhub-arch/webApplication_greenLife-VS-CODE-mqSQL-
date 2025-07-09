@@ -1,0 +1,26 @@
+<div>
+        <form action="" method="post" onsubmit="validationform()">
+
+            <label for="fname">first name</label>
+            <input class="input1" type="text" id="fname">
+
+            <label for="lname">Last name</label>
+            <input  class="input1" type="text" id="lname">
+
+            <label for="email">Email</label>
+            <input  class="input1" type="email" id="email">
+
+            
+                <label>gender: </label>
+                <input type="radio" id="male" value="male" name="gender">
+                <label for="male">male</label>
+
+                <input type="radio" id="female" value="female" name="gender">
+                <label for="female">female</label><br>
+                
+
+            <button type="submit">submit</button>
+
+            
+        </form>
+    </div>

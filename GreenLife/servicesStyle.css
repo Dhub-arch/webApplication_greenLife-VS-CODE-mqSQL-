@@ -1,0 +1,115 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* Container */
+    .container {
+      padding: 30px;
+    }
+
+    /* Service card */
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #ccc;
+      padding: 20px 0;
+     
+      border-radius: 7px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover{
+        transform: scale(1.01);
+        
+        
+    }
+
+    .card-text {
+      flex: 1;
+      padding-right: 20px;
+      padding-left: 25px;
+    }
+
+    .card-text h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .card-text p {
+      margin: 10px 0;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .card-buttons {
+      margin-top: 10px;
+    }
+
+    .card-buttons button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .card-buttons button:hover {
+      background-color: #f2f2f2;
+    }
+
+    .card-image {
+      text-align: center;
+      min-width: 400px;
+    }
+
+    .card-image img {
+      width: 300px;
+      height: 200px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    /*.card-image img:hover{
+        transform: scale(1.05);
+        
+    }*/
+
+    .card-info {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card-info span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    .clock-icon {
+      font-size: 14px;
+    }

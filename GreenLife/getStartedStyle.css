@@ -1,0 +1,266 @@
+/* 01.below is the css code for GetStarted page*/
+
+/* Ensure page has no default margins */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+ background-color: #e8ffc6;
+; /* optional */
+  padding: 10px 20px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content:space-between;
+  align-items: center ;
+  
+}
+
+.logo img {
+  height: 100px; /* Adjust size as needed */
+}
+
+.headerButtons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+ 
+  border-radius: 18px;
+  border: none;
+  
+  box-shadow: rgba(0, 0, 0, 0.5)
+}
+
+.headerLoginButton{
+    background-color: #003220;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+    transition: box-shadow 0.1s ease;
+}
+.headerSignupButton{
+    background-color: #78dbb764;
+    color: #003220;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+    transition: box-shadow 0.1s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Pushes divText left, divImage right */
+  align-items: center;            /* Vertically centers both */
+  padding: 20px;
+  
+  align-items: flex-start; /* Aligns top lines */
+  gap: 20px; /* Optional spacing between text and image */
+  
+}
+s
+#p2{
+    
+  font-family:sans-serif;
+  margin: 0;
+  color: #1a211e;
+  
+}
+h1{
+  font-size: 100px;
+  color: #053926;/*053926*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+}
+.ReserveNowBtn{
+    height: 70px;
+    width: 300px;
+    border-radius: 50px;
+    font-size: 30px;
+    color:black;
+    border: none;
+    margin-top: 50px;
+    margin-left: 250px;
+    filter: blur(50%);
+    background-color: #93f600c1;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+    transition: box-shadow 0.1s ease;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ReserveNowBtn:hover{
+    background-color: #064833;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.headerLoginButton:hover{
+    background-color: #93f600c1;
+    color: #003220;
+
+}
+.headerSignupButton:hover{
+    background-color: #93f600c1;
+    color: #003220;
+}
+body{
+    background-color: #e8ffc6;
+}
+
+
+
+/*02.below is the css code for register page*/
+.regFormDiv{
+  background-color: #003220;
+}
+
+.divRegForm{
+  position: relative;
+  border: nones;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto; /* centers the div on the page */
+  text-align: left;
+  height: 500px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+}
+
+.divRegForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.divLoginForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.divPortalLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.input1 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.divLoginForm{
+  position: relative;
+  border: nones;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto; /* centers the div on the page */
+  margin-right: 168px;
+  text-align: left;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+  
+}
+
+.divLoginForm button{
+  margin-left: 80px;
+}
+
+/*.close {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}*/
+
+.close{
+  cursor: pointer;
+  padding-left: 290px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+/*portal.html styles here*/
+
+.portalBtn{
+  background-color: #8cde89ae;
+  padding: 5px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size:15px ;
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  
+  
+  
+}
+
+.portalBtn:hover {
+      background-color: #00ff0d;
+      font-weight: bolder;
+    }
+
+
+.divPortalLogin{
+  position: relative;
+  border: nones;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto; /* centers the div on the page */
+  margin-right: 168px;
+  text-align: left;
+  height: 250px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

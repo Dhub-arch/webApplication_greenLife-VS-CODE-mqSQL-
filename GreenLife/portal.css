@@ -1,0 +1,132 @@
+header {
+ background-color: #e8ffc6;
+; /* optional */
+  padding: 10px 20px;
+  border-radius: 10px;
+
+}
+
+
+
+.portalLoginDiv{
+    /*
+    box-shadow: rgba(0, 0, 0, 0.6);
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;*/
+
+  position: relative;
+  border: nones;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto; /* centers the div on the page */
+  text-align: left;
+  height: 500px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+  height: fit-content;
+  
+}
+
+.portalLoginDiv form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+h2{
+    margin-bottom: 1px;
+}
+
+
+.input1{
+    color: #0a3f20;
+    background-color: #ffffff;
+    width: 260px;
+    padding: 2PX;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+label{
+    margin-left: -190;
+    margin-top: 20PX;
+}
+
+#loginBtn{
+    margin-top: 20pX;
+    cursor: pointer;
+    height: 50px;
+    width: 100;
+    border: none;
+    background-color: #0a3f20;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#loginBtn:hover{
+    background-color: #4af04a;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.close{
+  cursor: pointer;
+  padding-left: 290px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+/**/
+.successMsgDiv{
+position: relative;
+  border: nones;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto; /* centers the div on the page */
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+  height: fit-content;
+}
+
+.sucessBtn-toLogin{
+     margin-top: 20pX;
+    cursor: pointer;
+    height: 30px;
+    width: 150;
+    border: none;
+    background-color: #0a3f20;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+}
+
+.sucessBtn-toLogin:hover{
+    background-color: #4af04a;
+    color: #000000;
+    font-weight: bolder;
+}
+
+
+

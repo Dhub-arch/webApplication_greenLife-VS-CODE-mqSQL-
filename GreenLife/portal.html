@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenLife Wellness Center</title>
+  <script src="loginValidation.js" defer></script>
+  <link rel="stylesheet" href="getStartedStyle.css" />
+  <link rel="stylesheet" href="portal.css" />
+  <link rel="icon" type="image/x-icon" href="greenlifeFavIcon.jpg">
+
+  <style>
+    .divPortalLogin a button{
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* This adds the shadow */
+  transition: box-shadow 0.1s ease;
+    }
+    .divPortalLogin a button:hover{
+      background-color: #08543c;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="headerContainer">
+      <div class="logo">
+        <a href="getStarted.html"><img src="light_logo_remvovedBG.png" alt="GreenLife_Logo" width="100" height="100" /></a>
+      </div>
+
+      <!--<div class="headerButtons">
+  <a href="getStarted.html"><button type="button" class="headerLoginButton">Back</button></a>
+  <a href="register.html"><button type="button" class="headerSignupButton">SignUp</button></a>
+</div>
+    </div>-->
+
+    <style>
+      
+    </style>
+      
+  </header>
+
+
+<div class="container">
+  <div id="divText" style=" width: 700px;">
+    <!--<p id="p1">Login to Green Life wellness center</p>-->
+    <h1>Login to <span style="color: #08543c;">Green Life</span> wellness center</h1>
+    <p id="p2">Renowned health and lifestyle organization based in Colombo,
+         dedicated to holistic wellness. The center offers services such as yoga, meditation,
+          nutritional guidance, and therapy, blending traditional healing with modern techniques.
+           With experienced professionals and a supportive environment, GreenLife helps individuals
+            achieve physical, mental, and emotional well-being.</p>
+  </div>
+  
+
+  
+  <div class="divImage">
+    <div class="divPortalLogin">
+      <span class="close" onclick="window.location.href='getStarted.html'">&times;</span>
+        <form action="" method="post" onsubmit="return validation()">
+            <h2>Access Portal</h2>
+            <p>Please Choose your relevent login type</p>
+
+            
+        
+            <a href="login.php"><button type="button" class="portalBtn">User Login</button></a><br>
+            <!--<a href="therepistLogin.html"><button type="button" class="portalBtn">Therepist login</button></a><br>-->
+            <a href="staffLogin.php"><button type="button" class="portalBtn">Portal Login</button></a>
+             
+
+            
+        </form>
+    
+  </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

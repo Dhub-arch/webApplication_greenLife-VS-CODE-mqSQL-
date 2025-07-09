@@ -1,0 +1,329 @@
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <link rel="stylesheet" href="headerFooter.css">
+  <style>
+    
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+    .inside-image {
+      background-image: url('homepageBG.png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      position: relative;
+      z-index: 0;
+      margin-top: 0px;
+    }
+
+    .inside-image h1{
+        font-size: 50;
+    }
+
+   
+    /* Welcome Content */
+    .content {
+      position: relative;
+      z-index: 1;
+      color: rgb(228, 228, 228);
+      text-align: left;
+      padding-top: 200px;
+      margin-left: 40px;
+    }
+
+    .content h1{
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 70px;
+    }
+
+    .content p{
+      font-size: 25px;
+
+    }
+    
+
+    .bookAppointmentBtn {
+      background-color:#064833;
+      border: none;
+      padding: 20px;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    .bookAppointmentBtn:hover {
+      background-color: #93f600c1;
+      font-weight: bold;
+      transform: scale(1.03);
+    }
+
+
+
+    .belowImageSection{
+         background-color: #f4f4f4; /* Light background */
+    
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    }
+
+
+    /*belowe div for services and teams*/
+    /*div boxxes to display services in the hompage*/
+/* */
+
+
+
+
+
+ .divclass1{
+            background-color: rgb(189, 209, 215);
+            width: 260px;
+            height: 200px;
+            
+            
+        }
+
+        .divclass2{
+            background-color: rgb(122, 169, 189);
+            width: 260px;
+            height: 200px;
+            margin-left: 306;
+            transition: transform 0.3s;
+        }
+        
+
+        .divclass3{
+            background-color: rgb(71, 103, 142);
+            width: 260px;
+            height: 200px;
+            margin-left: 306;
+        }
+        .divclass4{
+            background-color: rgb(33, 52, 103);
+            width: 260px;
+            height: 200px;
+            margin-left: 306;
+        }
+        .divclass5{
+            background-color: rgb(18, 13, 70);
+            width: 260px;
+            height: 200px;
+            margin-left: 306;
+        }
+
+        #div1{
+            margin-bottom:30px;
+            
+        }
+        #div2{
+            margin-bottom:30px;
+        }
+        #div3{
+            margin-bottom:30px;
+        }
+        #div4{
+            margin-bottom:30px;
+        }
+        #div5{
+            margin-bottom:30px;
+        }
+        
+        .service-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+            
+        }
+
+        .service-member{
+            text-align: center;
+            
+            height: 200px;
+            width: 250px;
+            background-color: #1e293b;
+            transition: transform 0.3s;
+            
+        }
+
+        .service-member:hover{
+          background-color: #16a34a;
+          transform: scale(1.02);
+        }
+        
+        .service-member p{
+            font-size: 25px;
+            padding-top: 25%;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        
+  .team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .team-member {
+    text-align: center;
+    width: 150px;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+  }
+
+  .team-member p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1e293b;
+  }
+
+
+
+    
+  </style>
+</head>
+
+<body>
+  
+
+    <!-- Header Section -->
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">GreenLife</h1>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="wellnesspractices.html">Wellness Practices</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+          <button class="logout-btn" onclick="location.href='getStarted.html'">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+
+    <div class="inside-image">
+        <!-- Welcome Section -->
+    <div class="content">
+      <h1>Welcome To GreenLife Center</h1>
+      <p>Renowned health and lifestyle organization based in Colombo,
+        dedicated to holistic wellness...
+      </p>
+      <button class="bookAppointmentBtn" onclick="location.href='bookappointment.php'">Book Appointment</button>
+    </div>
+    </div>
+
+    <div class="belowImageSection">
+        <h2>Discover Your Path to Wellness</h2>
+        
+        <p>At Green Life Wellness Center,
+             we are dedicated to helping you find peace,
+              balance, and healing through holistic practices
+               and personalized care.
+            
+            </p>
+<div class="service-container">
+  <div class="service-member" onclick="location.href='services.php'">
+    
+    <p>Ayurvedic Therapy</p>
+  </div>
+
+  <div class="service-member" onclick="location.href='services.php'">
+    
+    <p>Yoga and Meditation</p>
+  </div>
+
+  <div class="service-member" onclick="location.href='services.php'">
+    
+    <p>Massage Therapy</p>
+  </div>
+
+  <div class="service-member" onclick="location.href='services.php'">
+    
+    <p>Nutrition Consultation
+</p>
+  </div>
+
+  <div class="service-member" onclick="location.href='services.php'">
+    
+    <p>Physiotherapy</p>
+  </div>
+</div>
+
+
+<div class="teammembers" >
+    <h2>Our Team</h2>
+  <p>
+    We are here at Green Life Center to give you the best service.
+    We are dedicated to helping you find peace, balance, and healing
+    through holistic practices and personalized care.
+  </p>
+  <div class="team-container">
+  <div class="team-member">
+    <img src="light logo.png" alt="Team Member 1">
+    <p>John Smith</p>
+  </div>
+
+  <div class="team-member">
+    <img src="light logo.png" alt="Team Member 2">
+    <p>Jane Doe</p>
+  </div>
+
+  <div class="team-member">
+    <img src="light logo.png" alt="Team Member 3">
+    <p>Michael Lee</p>
+  </div>
+
+  <div class="team-member">
+    <img src="light logo.png" alt="Team Member 4">
+    <p>Hershal Diuran</p>
+  </div>
+
+  <div class="team-member">
+    <img src="light logo.png" alt="Team Member 5">
+    <p>Sarah Thomas</p>
+  </div>
+</div>
+</div>
+        
+
+
+ 
+    
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 GreenLife Pvt Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+  
+</body>
+</html>
